@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration 
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd" >
+
+<configuration>
+	<settings>
+		<!-- 비어있는 값이 들어오면 null로 사용하다는 것을 설정. -->
+		<setting name="jdbcTypeForNull" value="NULL"/>
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.kh.pop.service.model.vo.IpBoard" alias="ipBoard" />
+		<typeAlias type="com.kh.pop.service.model.vo.IpFileInfo" alias="ipFileInfo" />
+		<typeAlias type="com.kh.pop.service.model.vo.Member" alias="Member" />
+	</typeAliases> 
+	<mappers>
+		<mapper resource="mapper/interpia-mapper.xml"/>
+	</mappers>
+</configuration>
